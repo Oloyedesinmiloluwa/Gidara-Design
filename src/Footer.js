@@ -32,9 +32,6 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="footer-right">
-                        {/* <div>
-
-                        </div> */}
                         <img src="/gidara-logo.jpg" />
                         <div>
                             <p> Gidara</p>
