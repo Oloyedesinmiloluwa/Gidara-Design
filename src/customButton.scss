@@ -1,0 +1,18 @@
+@import './colors';
+
+.MuiIconButton-root {
+    border: solid 2px $secondary !important;
+    padding: 8px !important;
+
+    svg {
+        color: $secondary;
+    }
+    &.dark {
+        border: black !important;
+        background-color: black !important;
+
+        svg {
+            color: white;
+        }
+    }
+}
