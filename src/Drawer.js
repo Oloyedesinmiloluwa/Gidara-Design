@@ -35,7 +35,6 @@ export default function CustomDrawer({state,setState}) {
       })}
       role="presentation"
       onClick={()=>setState(false)}
-    //   onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
         {['companies', 'Team', 'Resources', 'Programs', 'Blog', 'Contact'].map((text, index) => (

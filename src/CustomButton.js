@@ -16,7 +16,6 @@ const arrowMap = {
 const CustomButton = ({ style, point, dark }) => {
     const darkStyle = dark ? {backgroundColor: 'black', color: 'white !important', border: 'black !important'}: {}
     return (
-            // <Button className="circular" />
             <IconButton style={style} size="small" className={`circular ${dark ? 'dark': ''}`}>
                 
                 {arrowMap[point] || <ArrowDownwardIcon fontSize="small" />}

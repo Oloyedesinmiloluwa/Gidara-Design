@@ -112,8 +112,6 @@ const Home = () => {
                     <div className="slider">
                         <div className="slider-image"></div>
                         <div className="slider-body">
-                            {/* <CustomButton style={{ marginRight: '25px' }} point="left" />
-                            <CustomButton point="right" /> */}
                             <div className="slider-button" style={{ margin: '45px 0px 10px 0px' }}>
                                 <CustomButton style={{marginRight: '25px'}} point="left" />
                             <CustomButton point="right" />
