@@ -9,7 +9,7 @@ import './customButton.scss';
 
 const arrowMap = {
     'left': <ArrowBackIcon fontSize="small" />,
-    'right': <ArrowRightAltIcon fontSize="small" />,
+    'right': <ArrowBackIcon style={{ transform: 'rotate(180deg)'}} fontSize="small" />,
     'top': <ArrowUpwardIcon fontSize="small" />,
     'bottom': <ArrowDownwardIcon fontSize="small" />
 }
