@@ -1,119 +1,114 @@
-@import './colors';
+@import "./colors";
 
 .slider-group {
-    overflow: hidden;
-    display: flex;
-    width: 100%;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  // height: 700px;
+  height: 780px;
+  .slider {
+    width: 25%;
+    margin-right: 5%;
+    // height: 100%;
+    .slider-image {
+      height: 50%;
+      width: 100%;
+      // background-image: url('');
+      background-color: grey;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      // &:nth-child(1) {
+      // background-image: url('./assets/Mentors\ section\ image\ 3\ -\ Chance\ the\ rapper.png');
+      // }
+    }
+    .slider-body {
+      // height: 45%;
+      text-align: left;
+      padding: 0px 20px;
+
+      h3 {
+        font-size: 35px;
+        color: $secondary;
+        font-weight: 900;
+      }
+    }
+    &:nth-child(1),
+    &:nth-child(3) {
+      // &::after {
+      //     content: '';
+      //     position: absolute;
+      //     top: 0px;
+      //     left: 0px;
+      //     height: 100%;
+      //     width: 100%;
+      // }
+      opacity: 0.5;
+      p {
+        width: 150%;
+      }
+      .slider-button {
+        // display: none;
+        visibility: hidden;
+      }
+    }
+    &:nth-child(3) {
+      margin-right: 0px;
+    }
+    &:nth-child(2) {
+      width: 50%;
+    }
+    &:nth-child(1) {
+      // width: 50%;
+      p {
+        transform: translateX(-25%);
+      }
+    }
+  }
+  @media only screen and (max-width: 848px) {
     // height: 700px;
-    height: 780px;
     .slider {
-        width: 25%;
-        margin-right: 5%;
-        // height: 100%;
-        .slider-image {
-            height: 50%;
-            width: 100%;
-            // background-image: url('');
-            background-color: grey;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            // &:nth-child(1) {
-                // background-image: url('./assets/Mentors\ section\ image\ 3\ -\ Chance\ the\ rapper.png');
-            // }
-        }
-        .slider-body {
-            // height: 45%;
-            text-align: left;
-            padding: 0px 20px;
+      width: 25%;
+      margin-right: 5%;
+      // height: 100%;
+      .slider-image {
+        height: 50%;
+      }
+      .slider-body {
+        padding: 0px 20px;
 
-            h3 {
-                font-size: 35px;
-                color: $secondary;
-                font-weight: 900;
-            }
-
+        h3 {
+          font-size: 25px;
+          font-weight: 900;
         }
-        &:nth-child(1), &:nth-child(3) {
-            // &::after {
-            //     content: '';
-            //     position: absolute;
-            //     top: 0px;
-            //     left: 0px;
-            //     height: 100%;
-            //     width: 100%;
-            // }
-            opacity: .5;
-            p {
-                width: 150%;
-            }
-            .slider-button {
-                // display: none;
-                visibility: hidden;
-            }
+      }
+      &:nth-child(1),
+      &:nth-child(3) {
+        display: none;
+        p {
+          width: 150%;
         }
-        &:nth-child(3) {
-            margin-right: 0px;
+        .slider-button {
+          // display: none;
+          visibility: hidden;
         }
-        &:nth-child(2) {
-            width: 50%;
+      }
+      &:nth-child(3) {
+        margin-right: 0px;
+      }
+      &:nth-child(2) {
+        // width: 150%;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      &:nth-child(1) {
+        // width: 50%;
+        p,
+        h3 {
+          transform: translateX(-25%);
         }
-        &:nth-child(1) {
-            // width: 50%;
-            p {
-                transform: translateX(-25%);
-
-            }
-        }
-
-        
+      }
     }
-    @media only screen and (max-width: 848px) {
-
-        // height: 700px;
-        .slider {
-            width: 25%;
-            margin-right: 5%;
-            // height: 100%;
-            .slider-image {
-                height: 50%;
-            
-            }
-            .slider-body {
-                padding: 0px 20px;
-    
-                h3 {
-                    font-size: 25px;
-                    font-weight: 900;
-                }
-    
-            }
-            &:nth-child(1), &:nth-child(3) {
-                display: none;
-                p {
-                    width: 150%;
-                }
-                .slider-button {
-                    // display: none;
-                    visibility: hidden;
-                }
-            }
-            &:nth-child(3) {
-                margin-right: 0px;
-            }
-            &:nth-child(2) {
-                // width: 150%;
-                width: 90%;
-                margin-right: auto;
-                margin-left: auto;
-            }
-            &:nth-child(1) {
-                // width: 50%;
-                p, h3 {
-                    transform: translateX(-25%);
-    
-                }
-            }
-        }
-    }
+  }
 }
