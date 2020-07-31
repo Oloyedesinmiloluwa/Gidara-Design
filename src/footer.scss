@@ -3,7 +3,6 @@ footer {
   position: relative;
   height: 500px;
   background-color: $primary;
-  // display: flex;
   padding-top: 70px;
   padding-left: 80px;
   .footer-top {
@@ -33,7 +32,6 @@ footer {
       display: flex;
       align-items: flex-start;
       img {
-        // display: inline-block;
         width: 30px;
         height: 30px;
         margin-right: 20px;
@@ -67,7 +65,6 @@ footer {
     svg {
       margin-right: 20px;
       color: $secondary;
-      // font-size: ;
     }
   }
   @media (min-width: 849px) and (max-width: 1273px) {
@@ -77,10 +74,6 @@ footer {
         padding-left: 60px;
         display: flex;
         align-items: flex-start;
-        img {
-        }
-        p {
-        }
       }
     }
   }

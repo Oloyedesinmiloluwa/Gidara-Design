@@ -4,9 +4,9 @@ import CardGroup from "./CardGroup";
 
 const LandingSectionWithCards = ({ verticalText, viewAllButton, children }) => {
   return (
-    <div className="in-great-company">
+    <div className="section-with-card">
       <hr />
-      <div className="in-great-company-body">
+      <div className="section-with-card-body">
         <h2 id="what-we-do" className="text-vertical">
           {verticalText}&nbsp;
         </h2>

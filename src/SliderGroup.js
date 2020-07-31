@@ -24,7 +24,7 @@ const SliderGroup = () => {
             <CustomButton style={{ marginRight: "25px" }} point="left" />
             <CustomButton point="right" />
           </div>
-          <h3>Timbaland</h3>
+          <h3>Tim</h3>
           <p>
             Timothy Zachary Mosley, known professionally as Timbaland, is an
             American record producer, rapper, singer, songwriter, and DJ.
@@ -71,7 +71,7 @@ const SliderGroup = () => {
             <CustomButton style={{ marginRight: "25px" }} point="left" />
             <CustomButton point="right" />
           </div>
-          <h3>Timbaland</h3>
+          <h3>Chance the Rapper</h3>
           <p>
             Timothy Zachary Mosley, known professionally as Timbaland, is an
             American record producer, rapper, singer, songwriter, and DJ.

@@ -46,7 +46,7 @@ const Home = () => {
         <CardGroup />
       </LandingSectionWithCards>
 
-      <div className="our-mentors">
+      <div id="mentor" className="our-mentors">
         <h2 className="text-center">Our Mentors</h2>
         <SliderGroup />
       </div>

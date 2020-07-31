@@ -1,7 +1,6 @@
 import React from "react";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import YoutubeIcon from "@material-ui/icons/YouTube";
 import InstagramIcon from "@material-ui/icons/Instagram";
 
@@ -42,10 +41,10 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>&copy; 2018. All rights reserved</p>
         <div className="socials">
-          <TwitterIcon />
-          <FacebookIcon />
-          <YoutubeIcon />
-          <InstagramIcon />
+          <a href="https://www.linkedin.com/in/sinmiloluwa-oloyede-749077106/"><TwitterIcon /></a>
+          <a href="https://www.github.com/oloyedesinmiloluwa"><FacebookIcon /></a>
+          <a href="https://www.linkedin.com/in/sinmiloluwa-oloyede-749077106/"><YoutubeIcon /></a>
+          <a href="https://www.github.com/oloyedesinmiloluwa"><InstagramIcon /></a>
         </div>
       </div>
     </footer>
