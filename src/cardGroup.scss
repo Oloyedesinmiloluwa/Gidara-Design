@@ -1,9 +1,7 @@
 .card-group {
   display: flex;
-  // flex-wrap: wrap;
   margin-top: 80px;
   margin-bottom: 70px;
-  // flex-direction: column;
   width: 100%;
   .card {
     width: 30%;
@@ -11,11 +9,9 @@
     height: 50vw;
     margin-right: 3.33%;
     background-color: white;
-    // box-shadow: #e7f1f1 2px 1px 40px 4px;
     box-shadow: #f1f4f4 2px 1px 9px 4px;
     border-radius: 0px 0px 5px 5px;
     .card-image {
-      // background-image: url('./assets/What\ we\ do\ section\ image\ 1.png');
       background-color: grey;
       background-position: center;
       background-size: cover;
@@ -23,43 +19,67 @@
     }
     .card-text {
       padding: 0px 20px 5px;
-      // padding-bottom: 30px;
-      // height: 40%;
       overflow: hidden;
       height: 45%;
-      // overflow : hidden;
-      // text-overflow: ellipsis;
-      // display: -webkit-box;
-      // -webkit-line-clamp: 4;
-      // -webkit-box-orient: vertical;
       h3 {
         font-size: 22px;
         margin-bottom: 8px;
       }
       p {
         font-size: 1.25rem;
-        // margin-top: 0.6rem;
       }
     }
   }
-  @media only screen and (max-width: 848px) {
-    //increase
+  @media (min-width: 849px) and (max-width: 975px) {
+    .card {
+        .card-text {
+            p {
+                font-size: 1.9vw;
+            }
+        }
+      }
+  }
+  @media (min-width: 472px) and (max-width: 849px) {
     overflow: auto;
     white-space: nowrap;
     padding-right: 5%;
     padding-left: 4px;
     padding-bottom: 4px;
-    // margin-left: -15%;
+    .card {
+      width: 70%;
+      min-width: 70%;
+      margin-right: 5%;
+      height: 400px;
+      white-space: normal;
+      display: inline-block;
+      .card-text {
+          p {
+              font-size: 16px;
+          }
+      }
+  }
+  }
+  @media only screen and (max-width: 472px) {
+    overflow: auto;
+    white-space: nowrap;
+    padding-right: 5%;
+    padding-left: 4px;
+    padding-bottom: 4px;
     .card {
       width: 90%;
       min-width: 90%;
       margin-right: 5%;
       height: 94vw;
-      // width: 300px;
       white-space: normal;
       display: inline-block;
-      &:last-child {
-        // margin-right: 30px;
+      .card-image {
+          height: 45%;
+      }
+      .card-text {
+          height: 55%;
+          p {
+              font-size: 16px;
+          }
       }
     }
   }

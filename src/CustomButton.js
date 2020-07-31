@@ -1,10 +1,8 @@
 import React from "react";
-import { Button, IconButton } from "@material-ui/core";
+import { IconButton } from "@material-ui/core";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
-import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
-import KeyboardBackspaceIcon from "@material-ui/icons/KeyboardBackspace";
 import "./customButton.scss";
 
 const arrowMap = {
@@ -16,13 +14,6 @@ const arrowMap = {
   bottom: <ArrowDownwardIcon fontSize="small" />,
 };
 const CustomButton = ({ style, point, dark }) => {
-  const darkStyle = dark
-    ? {
-        backgroundColor: "black",
-        color: "white !important",
-        border: "black !important",
-      }
-    : {};
   return (
     <IconButton
       style={style}
